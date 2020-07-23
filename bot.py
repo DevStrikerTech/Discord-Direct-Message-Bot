@@ -37,4 +37,4 @@ async def on_resumed():
     print("MODBOX RECONNECTED")
 
 
-client.run(os.environ.get("TOKEN"), reconnect=True)
+client.run(os.environ.get("TOKEN"))
