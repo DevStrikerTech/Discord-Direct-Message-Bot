@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import os
 
-
+TOKEN = os.environ.get("S1")
 client = commands.Bot(command_prefix=commands.when_mentioned_or("^"), case_insensitive=True)
 client.remove_command("help")
 
@@ -37,4 +37,4 @@ async def on_resumed():
     print("MODBOX RECONNECTED")
 
 
-client.run(os.environ.get("TOKEN"))
+client.run(f'{TOKEN}', reconnect=True)
