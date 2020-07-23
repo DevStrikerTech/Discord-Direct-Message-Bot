@@ -1,2 +1,2 @@
-discord.py==1.3.3
+discord.py==1.3.4
 discord==1.0.1
