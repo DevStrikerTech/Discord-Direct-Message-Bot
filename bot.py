@@ -7,7 +7,7 @@ client.remove_command("help")
 
 
 def check_team(ctx):
-    return client.get_guild(699963943082524705).get_role(722836278516777021) in ctx.author.roles
+    return client.get_guild('ID REQUIRED HERE').get_role('ID REQUIRED HERE') in ctx.author.roles
 
 
 @client.event
@@ -21,7 +21,7 @@ async def on_message(message):
         return
     if message.author != message.author.bot:
         if not message.guild:
-            await client.get_guild(699963943082524705).get_channel(722807952700080211).send(
+            await client.get_guild('ID REQUIRED HERE').get_channel('ID REQUIRED HERE').send(
                 f"User Mention: {message.author.mention}\nUsername: {message.author}\nUser-ID: {message.author.id}\n\nMessage:\n{message.content}")
     await client.process_commands(message)
 
